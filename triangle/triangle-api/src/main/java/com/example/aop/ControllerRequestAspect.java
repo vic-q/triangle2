@@ -37,7 +37,7 @@ public class ControllerRequestAspect {
 
         Optional<Method> maybeMethod = getTargetMethod(joinPoint);
 
-        if(maybeMethod.isPresent()) {
+        if (maybeMethod.isPresent()) {
 
             Method method = maybeMethod.get();
 
@@ -59,7 +59,7 @@ public class ControllerRequestAspect {
 
         Signature signature = joinPoint.getSignature();
 
-        if(Objects.nonNull(signature) && signature instanceof MethodSignature) {
+        if (Objects.nonNull(signature) && signature instanceof MethodSignature) {
 
             MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
 
@@ -97,7 +97,7 @@ public class ControllerRequestAspect {
 
             int limit = Math.min(argumentNameArray.length, argumentValueArray.length);
 
-            for(int i = 0; i < limit; ++i) {
+            for (int i = 0; i < limit; ++i) {
 
                 stringBuilder.append("[").append(argumentNameArray[i]).append("]: ").append(argumentValueArray[i]).append("\n");
             }

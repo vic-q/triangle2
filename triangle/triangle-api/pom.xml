@@ -11,6 +11,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>triangle-api</artifactId>
+    <packaging>jar</packaging>
+    
+    <properties>
+        <start-class>com.example.TriangleApplication</start-class>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -28,5 +33,31 @@
             <artifactId>triangle-contract</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+        </plugins>
+
+        <finalName>triangle-api</finalName>
+    </build>
 
 </project>

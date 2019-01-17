@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -15,6 +16,7 @@ import lombok.Setter;
  * @author wangqing
  */
 @Entity
+@Table(name = "city")
 @Getter
 @Setter
 public class City implements Serializable {
@@ -32,5 +34,4 @@ public class City implements Serializable {
 
     @Column(name = "father_id")
     private Integer fatherId;
-
 }
