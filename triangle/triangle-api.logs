@@ -1,73 +1,61 @@
-2019-01-17 22:27:09.291  INFO 1767 [com.example.TriangleApplication] : Starting TriangleApplication on wq-MacBook with PID 1767 (/Users/wangqing/Documents/github/triangle2/triangle/triangle-api/target/classes started by wangqing in /Users/wangqing/Documents/github/triangle2/triangle)
-2019-01-17 22:27:09.301  INFO 1767 [com.example.TriangleApplication] : No active profile set, falling back to default profiles: default
-2019-01-17 22:27:09.447  INFO 1767 [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36b4fe2a: startup date [Thu Jan 17 22:27:09 CST 2019]; root of context hierarchy
-2019-01-17 22:27:11.185  INFO 1767 [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-01-17 22:27:11.483  INFO 1767 [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-01-17 22:27:11.506  INFO 1767 [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.repository.CityRepository.
-2019-01-17 22:27:12.229  INFO 1767 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$41af2712] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-01-17 22:27:13.011  INFO 1767 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 8080 (http)
-2019-01-17 22:27:13.036  INFO 1767 [org.apache.coyote.http11.Http11NioProtocol] : Initializing ProtocolHandler ["http-nio-8080"]
-2019-01-17 22:27:13.054  INFO 1767 [org.apache.catalina.core.StandardService] : Starting service [Tomcat]
-2019-01-17 22:27:13.055  INFO 1767 [org.apache.catalina.core.StandardEngine] : Starting Servlet Engine: Apache Tomcat/8.5.31
-2019-01-17 22:27:13.069  INFO 1767 [org.apache.catalina.core.AprLifecycleListener] : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangqing/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2019-01-17 22:27:13.231  INFO 1767 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] : Initializing Spring embedded WebApplicationContext
-2019-01-17 22:27:13.231  INFO 1767 [org.springframework.web.context.ContextLoader] : Root WebApplicationContext: initialization completed in 3793 ms
-2019-01-17 22:27:13.509  INFO 1767 [org.springframework.boot.web.servlet.ServletRegistrationBean] : Servlet dispatcherServlet mapped to [/]
-2019-01-17 22:27:13.517  INFO 1767 [org.springframework.boot.web.servlet.FilterRegistrationBean] : Mapping filter: 'characterEncodingFilter' to: [/*]
-2019-01-17 22:27:13.518  INFO 1767 [org.springframework.boot.web.servlet.FilterRegistrationBean] : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2019-01-17 22:27:13.518  INFO 1767 [org.springframework.boot.web.servlet.FilterRegistrationBean] : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2019-01-17 22:27:13.518  INFO 1767 [org.springframework.boot.web.servlet.FilterRegistrationBean] : Mapping filter: 'requestContextFilter' to: [/*]
-2019-01-17 22:27:13.581  INFO 1767 [com.example.config.DataSourceConfig] : datasource init...
-2019-01-17 22:27:13.726  INFO 1767 [com.alibaba.druid.pool.DruidDataSource] : {dataSource-1} inited
-2019-01-17 22:27:14.307  INFO 1767 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Building JPA container EntityManagerFactory for persistence unit 'default'
-2019-01-17 22:27:14.332  INFO 1767 [org.hibernate.jpa.internal.util.LogHelper] : HHH000204: Processing PersistenceUnitInfo [
+2019-01-17 22:44:45.689  INFO [main] 1900 [com.example.TriangleApplication] : Starting TriangleApplication on wq-MacBook with PID 1900 (/Users/wangqing/Documents/github/triangle2/triangle/triangle-api/target/classes started by wangqing in /Users/wangqing/Documents/github/triangle2/triangle)
+2019-01-17 22:44:45.726  INFO [main] 1900 [com.example.TriangleApplication] : No active profile set, falling back to default profiles: default
+2019-01-17 22:44:45.937  INFO [main] 1900 [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@757acd7b: startup date [Thu Jan 17 22:44:45 CST 2019]; root of context hierarchy
+2019-01-17 22:44:47.474  INFO [main] 1900 [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-17 22:44:47.828  INFO [main] 1900 [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-17 22:44:47.859  INFO [main] 1900 [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.repository.CityRepository.
+2019-01-17 22:44:48.702  INFO [main] 1900 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1d07987f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-17 22:44:49.525  INFO [main] 1900 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 8080 (http)
+2019-01-17 22:44:49.573  INFO [main] 1900 [org.apache.coyote.http11.Http11NioProtocol] : Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-17 22:44:49.607  INFO [main] 1900 [org.apache.catalina.core.StandardService] : Starting service [Tomcat]
+2019-01-17 22:44:49.608  INFO [main] 1900 [org.apache.catalina.core.StandardEngine] : Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-01-17 22:44:49.632  INFO [localhost-startStop-1] 1900 [org.apache.catalina.core.AprLifecycleListener] : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangqing/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-01-17 22:44:49.870  INFO [localhost-startStop-1] 1900 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] : Initializing Spring embedded WebApplicationContext
+2019-01-17 22:44:49.870  INFO [localhost-startStop-1] 1900 [org.springframework.web.context.ContextLoader] : Root WebApplicationContext: initialization completed in 4007 ms
+2019-01-17 22:44:50.178  INFO [localhost-startStop-1] 1900 [org.springframework.boot.web.servlet.ServletRegistrationBean] : Servlet dispatcherServlet mapped to [/]
+2019-01-17 22:44:50.191  INFO [localhost-startStop-1] 1900 [org.springframework.boot.web.servlet.FilterRegistrationBean] : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-17 22:44:50.192  INFO [localhost-startStop-1] 1900 [org.springframework.boot.web.servlet.FilterRegistrationBean] : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-17 22:44:50.192  INFO [localhost-startStop-1] 1900 [org.springframework.boot.web.servlet.FilterRegistrationBean] : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-17 22:44:50.192  INFO [localhost-startStop-1] 1900 [org.springframework.boot.web.servlet.FilterRegistrationBean] : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-17 22:44:50.323  INFO [main] 1900 [com.example.config.DataSourceConfig] : datasource init...
+2019-01-17 22:44:50.568  INFO [main] 1900 [com.alibaba.druid.pool.DruidDataSource] : {dataSource-1} inited
+2019-01-17 22:44:51.285  INFO [main] 1900 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-17 22:44:51.318  INFO [main] 1900 [org.hibernate.jpa.internal.util.LogHelper] : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-01-17 22:27:14.447  INFO 1767 [org.hibernate.Version] : HHH000412: Hibernate Core {5.2.17.Final}
-2019-01-17 22:27:14.456  INFO 1767 [org.hibernate.cfg.Environment] : HHH000206: hibernate.properties not found
-2019-01-17 22:27:14.526  INFO 1767 [org.hibernate.annotations.common.Version] : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2019-01-17 22:27:14.784  INFO 1767 [org.hibernate.dialect.Dialect] : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2019-01-17 22:27:15.560  INFO 1767 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-01-17 22:27:16.880  WARN 1767 [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-01-17 22:27:16.975  INFO 1767 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/triangle/api/city/queryById],methods=[POST]}" onto public com.example.common.Result<com.example.entity.City> com.example.controller.CityController.queryById(com.example.contract.request.GetCityByIdRequest,org.springframework.validation.BindingResult)
-2019-01-17 22:27:16.977  INFO 1767 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/hello],methods=[POST]}" onto public java.lang.String com.example.controller.HelloController.hello()
-2019-01-17 22:27:16.979  INFO 1767 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
-2019-01-17 22:27:16.984  INFO 1767 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
-2019-01-17 22:27:16.986  INFO 1767 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
-2019-01-17 22:27:16.987  INFO 1767 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
-2019-01-17 22:27:16.993  INFO 1767 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2019-01-17 22:27:16.993  INFO 1767 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2019-01-17 22:27:17.399  INFO 1767 [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-01-17 22:27:17.896  INFO 1767 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36b4fe2a: startup date [Thu Jan 17 22:27:09 CST 2019]; root of context hierarchy
-2019-01-17 22:27:17.993  INFO 1767 [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-01-17 22:27:17.993  INFO 1767 [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-01-17 22:27:18.019  INFO 1767 [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] : Detected @ExceptionHandler methods in apiControllerAdvice
-2019-01-17 22:27:19.101  INFO 1767 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Registering beans for JMX exposure on startup
-2019-01-17 22:27:19.103  INFO 1767 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Bean with name 'dataSource' has been autodetected for JMX exposure
-2019-01-17 22:27:19.112  INFO 1767 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
-2019-01-17 22:27:19.119  INFO 1767 [org.springframework.context.support.DefaultLifecycleProcessor] : Starting beans in phase 2147483647
-2019-01-17 22:27:19.119  INFO 1767 [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] : Context refreshed
-2019-01-17 22:27:19.143  INFO 1767 [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] : Found 1 custom documentation plugin(s)
-2019-01-17 22:27:19.159  INFO 1767 [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] : Scanning for api listing references
-2019-01-17 22:27:19.368  INFO 1767 [org.apache.coyote.http11.Http11NioProtocol] : Starting ProtocolHandler ["http-nio-8080"]
-2019-01-17 22:27:19.393  INFO 1767 [org.apache.tomcat.util.net.NioSelectorPool] : Using a shared selector for servlet write/read
-2019-01-17 22:27:19.413  INFO 1767 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port(s): 8080 (http) with context path ''
-2019-01-17 22:27:19.420  INFO 1767 [com.example.TriangleApplication] : Started TriangleApplication in 10.957 seconds (JVM running for 12.814)
-2019-01-17 22:27:37.008  INFO 1767 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2019-01-17 22:27:37.008  INFO 1767 [org.springframework.web.servlet.DispatcherServlet] : FrameworkServlet 'dispatcherServlet': initialization started
-2019-01-17 22:27:37.048  INFO 1767 [org.springframework.web.servlet.DispatcherServlet] : FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
-2019-01-17 22:27:37.269  INFO 1767 [com.example.aop.ControllerRequestAspect] : 
-==========================================================================
-[ClassName]: com.example.controller.CityController
-[MethodName]: queryById
---------------------------------------------------------------------------
-[request]: GetCityByIdRequest(id=1)
-[result]: org.springframework.validation.BeanPropertyBindingResult: 0 errors
-==========================================================================
-
-2019-01-17 22:36:12.782  INFO 1767 [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36b4fe2a: startup date [Thu Jan 17 22:27:09 CST 2019]; root of context hierarchy
-2019-01-17 22:36:12.808  INFO 1767 [org.springframework.context.support.DefaultLifecycleProcessor] : Stopping beans in phase 2147483647
-2019-01-17 22:36:12.838  INFO 1767 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Unregistering JMX-exposed beans on shutdown
-2019-01-17 22:36:12.839  INFO 1767 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Unregistering JMX-exposed beans
-2019-01-17 22:36:12.845  INFO 1767 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-01-17 22:36:12.855  INFO 1767 [com.alibaba.druid.pool.DruidDataSource] : {dataSource-1} closed
+2019-01-17 22:44:51.467  INFO [main] 1900 [org.hibernate.Version] : HHH000412: Hibernate Core {5.2.17.Final}
+2019-01-17 22:44:51.469  INFO [main] 1900 [org.hibernate.cfg.Environment] : HHH000206: hibernate.properties not found
+2019-01-17 22:44:51.581  INFO [main] 1900 [org.hibernate.annotations.common.Version] : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-17 22:44:52.093  INFO [main] 1900 [org.hibernate.dialect.Dialect] : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-17 22:44:53.176  INFO [main] 1900 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-17 22:44:54.589  WARN [main] 1900 [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-17 22:44:54.688  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/triangle/api/city/queryById],methods=[POST]}" onto public com.example.common.Result<com.example.entity.City> com.example.controller.CityController.queryById(com.example.contract.request.GetCityByIdRequest,org.springframework.validation.BindingResult)
+2019-01-17 22:44:54.690  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/hello],methods=[POST]}" onto public java.lang.String com.example.controller.HelloController.hello()
+2019-01-17 22:44:54.692  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-01-17 22:44:54.698  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-01-17 22:44:54.698  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-01-17 22:44:54.699  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-01-17 22:44:54.704  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-17 22:44:54.704  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-17 22:44:55.227  INFO [main] 1900 [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 22:44:55.794  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@757acd7b: startup date [Thu Jan 17 22:44:45 CST 2019]; root of context hierarchy
+2019-01-17 22:44:55.902  INFO [main] 1900 [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 22:44:55.903  INFO [main] 1900 [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 22:44:55.928  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] : Detected @ExceptionHandler methods in apiControllerAdvice
+2019-01-17 22:44:57.111  INFO [main] 1900 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Registering beans for JMX exposure on startup
+2019-01-17 22:44:57.115  INFO [main] 1900 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-17 22:44:57.129  INFO [main] 1900 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-01-17 22:44:57.138  INFO [main] 1900 [org.springframework.context.support.DefaultLifecycleProcessor] : Starting beans in phase 2147483647
+2019-01-17 22:44:57.138  INFO [main] 1900 [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] : Context refreshed
+2019-01-17 22:44:57.183  INFO [main] 1900 [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] : Found 1 custom documentation plugin(s)
+2019-01-17 22:44:57.206  INFO [main] 1900 [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] : Scanning for api listing references
+2019-01-17 22:44:57.494  INFO [main] 1900 [org.apache.coyote.http11.Http11NioProtocol] : Starting ProtocolHandler ["http-nio-8080"]
+2019-01-17 22:44:57.519  INFO [main] 1900 [org.apache.tomcat.util.net.NioSelectorPool] : Using a shared selector for servlet write/read
+2019-01-17 22:44:57.540  INFO [main] 1900 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-17 22:44:57.547  INFO [main] 1900 [com.example.TriangleApplication] : Started TriangleApplication in 12.871 seconds (JVM running for 14.378)
+2019-01-17 22:45:14.748  INFO [Thread-3] 1900 [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@757acd7b: startup date [Thu Jan 17 22:44:45 CST 2019]; root of context hierarchy
+2019-01-17 22:45:14.754  INFO [Thread-3] 1900 [org.springframework.context.support.DefaultLifecycleProcessor] : Stopping beans in phase 2147483647
+2019-01-17 22:45:14.775  INFO [Thread-3] 1900 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Unregistering JMX-exposed beans on shutdown
+2019-01-17 22:45:14.777  INFO [Thread-3] 1900 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Unregistering JMX-exposed beans
+2019-01-17 22:45:14.780  INFO [Thread-3] 1900 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-17 22:45:14.786  INFO [Thread-3] 1900 [com.alibaba.druid.pool.DruidDataSource] : {dataSource-1} closed

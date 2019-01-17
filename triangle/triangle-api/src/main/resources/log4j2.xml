@@ -4,7 +4,7 @@
         <Property name="PID">????</Property>
         <Property name="LOG_EXCEPTION_CONVERSION_WORD">%xEx</Property>
         <Property name="LOG_LEVEL_PATTERN">%5p</Property>
-        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} ${LOG_LEVEL_PATTERN} ${sys:PID} [%c] : %m%n${LOG_EXCEPTION_CONVERSION_WORD}
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} ${LOG_LEVEL_PATTERN} [%t] ${sys:PID} [%c] : %m%n${LOG_EXCEPTION_CONVERSION_WORD}
         </Property>
         <Property name="LOG_PATH">./triangle-api.logs</Property>
     </Properties>
