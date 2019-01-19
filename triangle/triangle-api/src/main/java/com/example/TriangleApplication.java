@@ -9,10 +9,12 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Import;
 
 @SpringBootApplication
 @Configuration
+@EnableAspectJAutoProxy
 @Import(value = {TriangleApplicationContext.class})
 public class TriangleApplication extends SpringBootServletInitializer {
 
