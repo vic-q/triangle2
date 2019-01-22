@@ -1,61 +1,344 @@
-2019-01-17 22:44:45.689  INFO [main] 1900 [com.example.TriangleApplication] : Starting TriangleApplication on wq-MacBook with PID 1900 (/Users/wangqing/Documents/github/triangle2/triangle/triangle-api/target/classes started by wangqing in /Users/wangqing/Documents/github/triangle2/triangle)
-2019-01-17 22:44:45.726  INFO [main] 1900 [com.example.TriangleApplication] : No active profile set, falling back to default profiles: default
-2019-01-17 22:44:45.937  INFO [main] 1900 [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@757acd7b: startup date [Thu Jan 17 22:44:45 CST 2019]; root of context hierarchy
-2019-01-17 22:44:47.474  INFO [main] 1900 [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-01-17 22:44:47.828  INFO [main] 1900 [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-01-17 22:44:47.859  INFO [main] 1900 [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.repository.CityRepository.
-2019-01-17 22:44:48.702  INFO [main] 1900 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1d07987f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-01-17 22:44:49.525  INFO [main] 1900 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 8080 (http)
-2019-01-17 22:44:49.573  INFO [main] 1900 [org.apache.coyote.http11.Http11NioProtocol] : Initializing ProtocolHandler ["http-nio-8080"]
-2019-01-17 22:44:49.607  INFO [main] 1900 [org.apache.catalina.core.StandardService] : Starting service [Tomcat]
-2019-01-17 22:44:49.608  INFO [main] 1900 [org.apache.catalina.core.StandardEngine] : Starting Servlet Engine: Apache Tomcat/8.5.31
-2019-01-17 22:44:49.632  INFO [localhost-startStop-1] 1900 [org.apache.catalina.core.AprLifecycleListener] : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangqing/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2019-01-17 22:44:49.870  INFO [localhost-startStop-1] 1900 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] : Initializing Spring embedded WebApplicationContext
-2019-01-17 22:44:49.870  INFO [localhost-startStop-1] 1900 [org.springframework.web.context.ContextLoader] : Root WebApplicationContext: initialization completed in 4007 ms
-2019-01-17 22:44:50.178  INFO [localhost-startStop-1] 1900 [org.springframework.boot.web.servlet.ServletRegistrationBean] : Servlet dispatcherServlet mapped to [/]
-2019-01-17 22:44:50.191  INFO [localhost-startStop-1] 1900 [org.springframework.boot.web.servlet.FilterRegistrationBean] : Mapping filter: 'characterEncodingFilter' to: [/*]
-2019-01-17 22:44:50.192  INFO [localhost-startStop-1] 1900 [org.springframework.boot.web.servlet.FilterRegistrationBean] : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2019-01-17 22:44:50.192  INFO [localhost-startStop-1] 1900 [org.springframework.boot.web.servlet.FilterRegistrationBean] : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2019-01-17 22:44:50.192  INFO [localhost-startStop-1] 1900 [org.springframework.boot.web.servlet.FilterRegistrationBean] : Mapping filter: 'requestContextFilter' to: [/*]
-2019-01-17 22:44:50.323  INFO [main] 1900 [com.example.config.DataSourceConfig] : datasource init...
-2019-01-17 22:44:50.568  INFO [main] 1900 [com.alibaba.druid.pool.DruidDataSource] : {dataSource-1} inited
-2019-01-17 22:44:51.285  INFO [main] 1900 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Building JPA container EntityManagerFactory for persistence unit 'default'
-2019-01-17 22:44:51.318  INFO [main] 1900 [org.hibernate.jpa.internal.util.LogHelper] : HHH000204: Processing PersistenceUnitInfo [
+2019-01-22 09:12:58.693  INFO [main] 1624 [com.example.TriangleApplication] : Starting TriangleApplication on wq-MacBook.local with PID 1624 (/Users/wangqing/Documents/github/triangle2/triangle/triangle-api/target/classes started by wangqing in /Users/wangqing/Documents/github/triangle2/triangle)
+2019-01-22 09:12:58.734  INFO [main] 1624 [com.example.TriangleApplication] : No active profile set, falling back to default profiles: default
+2019-01-22 09:12:58.866  INFO [main] 1624 [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@157853da: startup date [Tue Jan 22 09:12:58 CST 2019]; root of context hierarchy
+2019-01-22 09:13:01.973  INFO [main] 1624 [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-22 09:13:02.341  INFO [main] 1624 [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-22 09:13:02.374  INFO [main] 1624 [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.repository.CityRepository.
+2019-01-22 09:13:03.552  INFO [main] 1624 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ebd9e41c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-22 09:13:04.484  INFO [main] 1624 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 8080 (http)
+2019-01-22 09:13:04.544  INFO [main] 1624 [org.apache.coyote.http11.Http11NioProtocol] : Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-22 09:13:04.587  INFO [main] 1624 [org.apache.catalina.core.StandardService] : Starting service [Tomcat]
+2019-01-22 09:13:04.590  INFO [main] 1624 [org.apache.catalina.core.StandardEngine] : Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-01-22 09:13:04.614  INFO [localhost-startStop-1] 1624 [org.apache.catalina.core.AprLifecycleListener] : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wangqing/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-01-22 09:13:04.914  INFO [localhost-startStop-1] 1624 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] : Initializing Spring embedded WebApplicationContext
+2019-01-22 09:13:04.915  INFO [localhost-startStop-1] 1624 [org.springframework.web.context.ContextLoader] : Root WebApplicationContext: initialization completed in 6054 ms
+2019-01-22 09:13:05.189  INFO [localhost-startStop-1] 1624 [org.springframework.boot.web.servlet.ServletRegistrationBean] : Servlet dispatcherServlet mapped to [/]
+2019-01-22 09:13:05.197  INFO [localhost-startStop-1] 1624 [org.springframework.boot.web.servlet.FilterRegistrationBean] : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-22 09:13:05.198  INFO [localhost-startStop-1] 1624 [org.springframework.boot.web.servlet.FilterRegistrationBean] : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-22 09:13:05.198  INFO [localhost-startStop-1] 1624 [org.springframework.boot.web.servlet.FilterRegistrationBean] : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-22 09:13:05.198  INFO [localhost-startStop-1] 1624 [org.springframework.boot.web.servlet.FilterRegistrationBean] : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-22 09:13:05.262  INFO [main] 1624 [com.example.config.DataSourceConfig] : datasource init...
+2019-01-22 09:13:05.449  INFO [main] 1624 [com.alibaba.druid.pool.DruidDataSource] : {dataSource-1} inited
+2019-01-22 09:13:06.159  INFO [main] 1624 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-22 09:13:06.197  INFO [main] 1624 [org.hibernate.jpa.internal.util.LogHelper] : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-01-17 22:44:51.467  INFO [main] 1900 [org.hibernate.Version] : HHH000412: Hibernate Core {5.2.17.Final}
-2019-01-17 22:44:51.469  INFO [main] 1900 [org.hibernate.cfg.Environment] : HHH000206: hibernate.properties not found
-2019-01-17 22:44:51.581  INFO [main] 1900 [org.hibernate.annotations.common.Version] : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2019-01-17 22:44:52.093  INFO [main] 1900 [org.hibernate.dialect.Dialect] : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2019-01-17 22:44:53.176  INFO [main] 1900 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-01-17 22:44:54.589  WARN [main] 1900 [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-01-17 22:44:54.688  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/triangle/api/city/queryById],methods=[POST]}" onto public com.example.common.Result<com.example.entity.City> com.example.controller.CityController.queryById(com.example.contract.request.GetCityByIdRequest,org.springframework.validation.BindingResult)
-2019-01-17 22:44:54.690  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/hello],methods=[POST]}" onto public java.lang.String com.example.controller.HelloController.hello()
-2019-01-17 22:44:54.692  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
-2019-01-17 22:44:54.698  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
-2019-01-17 22:44:54.698  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
-2019-01-17 22:44:54.699  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
-2019-01-17 22:44:54.704  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2019-01-17 22:44:54.704  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2019-01-17 22:44:55.227  INFO [main] 1900 [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-01-17 22:44:55.794  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@757acd7b: startup date [Thu Jan 17 22:44:45 CST 2019]; root of context hierarchy
-2019-01-17 22:44:55.902  INFO [main] 1900 [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-01-17 22:44:55.903  INFO [main] 1900 [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-01-17 22:44:55.928  INFO [main] 1900 [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] : Detected @ExceptionHandler methods in apiControllerAdvice
-2019-01-17 22:44:57.111  INFO [main] 1900 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Registering beans for JMX exposure on startup
-2019-01-17 22:44:57.115  INFO [main] 1900 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Bean with name 'dataSource' has been autodetected for JMX exposure
-2019-01-17 22:44:57.129  INFO [main] 1900 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
-2019-01-17 22:44:57.138  INFO [main] 1900 [org.springframework.context.support.DefaultLifecycleProcessor] : Starting beans in phase 2147483647
-2019-01-17 22:44:57.138  INFO [main] 1900 [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] : Context refreshed
-2019-01-17 22:44:57.183  INFO [main] 1900 [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] : Found 1 custom documentation plugin(s)
-2019-01-17 22:44:57.206  INFO [main] 1900 [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] : Scanning for api listing references
-2019-01-17 22:44:57.494  INFO [main] 1900 [org.apache.coyote.http11.Http11NioProtocol] : Starting ProtocolHandler ["http-nio-8080"]
-2019-01-17 22:44:57.519  INFO [main] 1900 [org.apache.tomcat.util.net.NioSelectorPool] : Using a shared selector for servlet write/read
-2019-01-17 22:44:57.540  INFO [main] 1900 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port(s): 8080 (http) with context path ''
-2019-01-17 22:44:57.547  INFO [main] 1900 [com.example.TriangleApplication] : Started TriangleApplication in 12.871 seconds (JVM running for 14.378)
-2019-01-17 22:45:14.748  INFO [Thread-3] 1900 [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@757acd7b: startup date [Thu Jan 17 22:44:45 CST 2019]; root of context hierarchy
-2019-01-17 22:45:14.754  INFO [Thread-3] 1900 [org.springframework.context.support.DefaultLifecycleProcessor] : Stopping beans in phase 2147483647
-2019-01-17 22:45:14.775  INFO [Thread-3] 1900 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Unregistering JMX-exposed beans on shutdown
-2019-01-17 22:45:14.777  INFO [Thread-3] 1900 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Unregistering JMX-exposed beans
-2019-01-17 22:45:14.780  INFO [Thread-3] 1900 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-01-17 22:45:14.786  INFO [Thread-3] 1900 [com.alibaba.druid.pool.DruidDataSource] : {dataSource-1} closed
+2019-01-22 09:13:06.386  INFO [main] 1624 [org.hibernate.Version] : HHH000412: Hibernate Core {5.2.17.Final}
+2019-01-22 09:13:06.392  INFO [main] 1624 [org.hibernate.cfg.Environment] : HHH000206: hibernate.properties not found
+2019-01-22 09:13:06.549  INFO [main] 1624 [org.hibernate.annotations.common.Version] : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-22 09:13:06.900  INFO [main] 1624 [org.hibernate.dialect.Dialect] : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-22 09:13:07.897  INFO [main] 1624 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-22 09:13:09.400  WARN [main] 1624 [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-22 09:13:09.548  INFO [main] 1624 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/triangle/api/city/queryById],methods=[POST]}" onto public com.example.common.Result<com.example.entity.City> com.example.controller.CityController.queryById(com.example.contract.request.GetCityByIdRequest,org.springframework.validation.BindingResult)
+2019-01-22 09:13:09.550  INFO [main] 1624 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/hello],methods=[POST]}" onto public java.lang.String com.example.controller.HelloController.hello()
+2019-01-22 09:13:09.551  INFO [main] 1624 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-01-22 09:13:09.557  INFO [main] 1624 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-01-22 09:13:09.558  INFO [main] 1624 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-01-22 09:13:09.560  INFO [main] 1624 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-01-22 09:13:09.567  INFO [main] 1624 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-22 09:13:09.567  INFO [main] 1624 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-22 09:13:09.989  INFO [main] 1624 [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-22 09:13:10.501  INFO [main] 1624 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@157853da: startup date [Tue Jan 22 09:12:58 CST 2019]; root of context hierarchy
+2019-01-22 09:13:10.617  INFO [main] 1624 [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-22 09:13:10.617  INFO [main] 1624 [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-22 09:13:10.644  INFO [main] 1624 [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] : Detected @ExceptionHandler methods in apiControllerAdvice
+2019-01-22 09:13:11.721  INFO [main] 1624 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Registering beans for JMX exposure on startup
+2019-01-22 09:13:11.724  INFO [main] 1624 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-22 09:13:11.739  INFO [main] 1624 [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-01-22 09:13:11.754  INFO [main] 1624 [org.springframework.context.support.DefaultLifecycleProcessor] : Starting beans in phase 2147483647
+2019-01-22 09:13:11.754  INFO [main] 1624 [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] : Context refreshed
+2019-01-22 09:13:11.813  INFO [main] 1624 [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] : Found 1 custom documentation plugin(s)
+2019-01-22 09:13:11.840  INFO [main] 1624 [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] : Scanning for api listing references
+2019-01-22 09:13:12.156  INFO [main] 1624 [org.apache.coyote.http11.Http11NioProtocol] : Starting ProtocolHandler ["http-nio-8080"]
+2019-01-22 09:13:12.189  INFO [main] 1624 [org.apache.tomcat.util.net.NioSelectorPool] : Using a shared selector for servlet write/read
+2019-01-22 09:13:12.213  INFO [main] 1624 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-22 09:13:12.221  INFO [main] 1624 [com.example.TriangleApplication] : Started TriangleApplication in 14.917 seconds (JVM running for 17.502)
+2019-01-22 09:13:48.235  INFO [http-nio-8080-exec-2] 1624 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-22 09:13:48.236  INFO [http-nio-8080-exec-2] 1624 [org.springframework.web.servlet.DispatcherServlet] : FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-22 09:13:48.280  INFO [http-nio-8080-exec-2] 1624 [org.springframework.web.servlet.DispatcherServlet] : FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2019-01-22 09:13:48.451  WARN [http-nio-8080-exec-2] 1624 [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: (PushbackInputStream); line: 4, column: 2]
+2019-01-22 09:13:48.501  INFO [http-nio-8080-exec-2] 1624 [com.example.aop.ControllerRequestAspect] : 
+==========================================================================
+[ClassName]: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController
+[MethodName]: error
+--------------------------------------------------------------------------
+[request]: org.apache.catalina.core.ApplicationHttpRequest@6281678e
+==========================================================================
+
+2019-01-22 09:14:00.670  INFO [http-nio-8080-exec-4] 1624 [com.example.aop.ControllerRequestAspect] : 
+==========================================================================
+[ClassName]: com.example.controller.CityController
+[MethodName]: queryById
+--------------------------------------------------------------------------
+[request]: GetCityByIdRequest(id=1, items=null)
+[result]: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'getCityByIdRequest' on field 'items': rejected value [null]; codes [NotEmpty.getCityByIdRequest.items,NotEmpty.items,NotEmpty.java.util.List,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [getCityByIdRequest.items,items]; arguments []; default message [items]]; default message [items 不能为空]
+==========================================================================
+
+2019-01-22 09:14:00.682 ERROR [http-nio-8080-exec-4] 1624 [com.example.aop.ApiControllerAdvice] : Project throws illegalArgumentException
+java.lang.IllegalArgumentException: 参数验证失败: items 不能为空
+	at com.example.aop.ValidateAspect.validate(ValidateAspect.java:61) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_45]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:174) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at com.example.aop.ControllerRequestAspect.logRequest(ControllerRequestAspect.java:55) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_45]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:174) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at com.example.controller.CityController$$EnhancerBySpringCGLIB$$343cb8ce.queryById(<generated>) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_45]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_45]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_45]
+2019-01-22 09:14:25.193  INFO [http-nio-8080-exec-5] 1624 [com.example.aop.ControllerRequestAspect] : 
+==========================================================================
+[ClassName]: com.example.controller.CityController
+[MethodName]: queryById
+--------------------------------------------------------------------------
+[request]: GetCityByIdRequest(id=1, items=[])
+[result]: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'getCityByIdRequest' on field 'items': rejected value [[]]; codes [NotEmpty.getCityByIdRequest.items,NotEmpty.items,NotEmpty.java.util.List,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [getCityByIdRequest.items,items]; arguments []; default message [items]]; default message [items 不能为空]
+==========================================================================
+
+2019-01-22 09:14:25.194 ERROR [http-nio-8080-exec-5] 1624 [com.example.aop.ApiControllerAdvice] : Project throws illegalArgumentException
+java.lang.IllegalArgumentException: 参数验证失败: items 不能为空
+	at com.example.aop.ValidateAspect.validate(ValidateAspect.java:61) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_45]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:174) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at com.example.aop.ControllerRequestAspect.logRequest(ControllerRequestAspect.java:55) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_45]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:174) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at com.example.controller.CityController$$EnhancerBySpringCGLIB$$343cb8ce.queryById(<generated>) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_45]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_45]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_45]
+2019-01-22 09:15:24.439  INFO [http-nio-8080-exec-6] 1624 [com.example.aop.ControllerRequestAspect] : 
+==========================================================================
+[ClassName]: com.example.controller.CityController
+[MethodName]: queryById
+--------------------------------------------------------------------------
+[request]: GetCityByIdRequest(id=1, items=[com.example.contract.request.Item@a08b3a4, com.example.contract.request.Item@49ba7bcc])
+[result]: org.springframework.validation.BeanPropertyBindingResult: 0 errors
+==========================================================================
+
+2019-01-22 09:15:37.604  INFO [http-nio-8080-exec-7] 1624 [com.example.aop.ControllerRequestAspect] : 
+==========================================================================
+[ClassName]: com.example.controller.CityController
+[MethodName]: queryById
+--------------------------------------------------------------------------
+[request]: GetCityByIdRequest(id=1, items=[com.example.contract.request.Item@39171e50, com.example.contract.request.Item@7c158716])
+[result]: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'getCityByIdRequest' on field 'items[1].name': rejected value [null]; codes [NotNull.getCityByIdRequest.items[1].name,NotNull.getCityByIdRequest.items.name,NotNull.items[1].name,NotNull.items.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [getCityByIdRequest.items[1].name,items[1].name]; arguments []; default message [items[1].name]]; default message [item name 不能为空]
+==========================================================================
+
+2019-01-22 09:15:37.606 ERROR [http-nio-8080-exec-7] 1624 [com.example.aop.ApiControllerAdvice] : Project throws illegalArgumentException
+java.lang.IllegalArgumentException: 参数验证失败: item name 不能为空
+	at com.example.aop.ValidateAspect.validate(ValidateAspect.java:61) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_45]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:174) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at com.example.aop.ControllerRequestAspect.logRequest(ControllerRequestAspect.java:55) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_45]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:174) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at com.example.controller.CityController$$EnhancerBySpringCGLIB$$343cb8ce.queryById(<generated>) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_45]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_45]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_45]

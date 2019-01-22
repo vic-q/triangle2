@@ -36,19 +36,12 @@ public class ControllerRequestAspect {
     public Object logRequest(ProceedingJoinPoint joinPoint) throws Throwable {
 
         Optional<Method> maybeMethod = getTargetMethod(joinPoint);
-
         if (maybeMethod.isPresent()) {
-
             Method method = maybeMethod.get();
-
             String className = joinPoint.getTarget().getClass().getName();
-
             String methodName = joinPoint.getSignature().getName();
-
             String[] argumentNameArray = parameterNameDiscoverer.getParameterNames(method);
-
             Object[] argumentValueArray = joinPoint.getArgs();
-
             printPrettyFormatLog(className, methodName, argumentNameArray, argumentValueArray);
         }
 
@@ -58,21 +51,13 @@ public class ControllerRequestAspect {
     private Optional<Method> getTargetMethod(ProceedingJoinPoint joinPoint) {
 
         Signature signature = joinPoint.getSignature();
-
         if (Objects.nonNull(signature) && signature instanceof MethodSignature) {
-
             MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
-
             Object target = joinPoint.getTarget();
-
             try {
-
                 Method method = target.getClass().getMethod(methodSignature.getName(), methodSignature.getParameterTypes());
-
                 return Optional.ofNullable(method);
-
             } catch (NoSuchMethodException e) {
-
                 return Optional.empty();
             }
         }
@@ -83,33 +68,21 @@ public class ControllerRequestAspect {
     private void printPrettyFormatLog(String className, String methodName, String[] argumentNameArray, Object[] argumentValueArray) {
 
         try {
-            // 构造模板
-
             StringBuilder stringBuilder = new StringBuilder();
-
             stringBuilder.append("\n==========================================================================\n");
-
             stringBuilder.append("[ClassName]: ").append(className).append("\n");
-
             stringBuilder.append("[MethodName]: ").append(methodName).append("\n");
-
             stringBuilder.append("--------------------------------------------------------------------------\n");
 
             int limit = Math.min(argumentNameArray.length, argumentValueArray.length);
-
             for (int i = 0; i < limit; ++i) {
-
                 stringBuilder.append("[").append(argumentNameArray[i]).append("]: ").append(argumentValueArray[i]).append("\n");
             }
 
             stringBuilder.append("==========================================================================\n");
 
-            // 输出
-
             logger.info(stringBuilder.toString());
-
         } catch (Exception e) {
-
             logger.error("", e);
         }
     }
